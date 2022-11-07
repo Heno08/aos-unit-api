@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  unit: one
+  name: MyString
+  attacks: MyString
+  tohit: MyString
+  towound: MyString
+  rend: MyString
+  dmg: MyString
+
+two:
+  unit: two
+  name: MyString
+  attacks: MyString
+  tohit: MyString
+  towound: MyString
+  rend: MyString
+  dmg: MyString
