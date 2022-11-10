@@ -1,0 +1,13 @@
+<%= form_with model: @unit do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.label :unitsize %>
+  <%= f.number_field :unitsize %>
+  <%= f.label :wounds %>
+  <%= f.number_field :wounds %>
+  <%= f.label :bravery %>
+  <%= f.number_field :bravery %>
+  <%= f.label :unitsave %>
+  <%= f.number_field :unitsave %>
+  <%= f.submit %>
+<% end %>
