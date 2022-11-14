@@ -52,6 +52,6 @@ class Api::V1::UnitsController < ApplicationController
   private
 
   def unit_params
-    params.require(:unit).permit(:name, :unitsize, :wounds, :bravery, :unitsave, :weapons)
+    params.require(:unit).permit(:name, :unitsize, :wounds, :bravery, :unitsave, :weapons, :img)
   end
 end
