@@ -4,6 +4,10 @@ class UnitsController < ApplicationController
     render json: units, include: 'weapons'
   end
 
+  def show
+    @unit = Unit.find(params[:id])
+  end
+
   def new
     @unit = Unit.new
   end
@@ -11,7 +15,6 @@ class UnitsController < ApplicationController
   def create
     @unit = Unit.new(params[unit_params])
     @unit.save
-    redirect_to units_path
   end
 
   private
