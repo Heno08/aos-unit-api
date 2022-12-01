@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
   get 'signup' => 'users#new'
-  resources :users
-  get 'login' => 'sessions#new'
+  get 'me' => 'users#show'
   post 'login' => 'sessions#create'
   delete 'logout' => 'sessions#destroy'
   namespace :api do
